@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cuestionarios</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Cuestionario 1</h1>
+            <h2>Preguntas sobre criptografía y capas de seguridad</h2>
+            <ol>
+                <li>
+                    <p class="pregunta">
+                        Plantear un caso de uso de encriptación unidireccional
+                    </p>
+                    <p class="respuesta">
+                        Un caso de uso es el almacenamiento de contraseñas en bases de datos. 
+                        Se utiliza un algoritmo de hash, como SHA-256, para convertir la 
+                        contraseña en una cadena de texto irreversiblemente encriptada.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Cuáles son las ventajas y desventajas de la encriptación asimétrica?
+                    </p>
+                    <p class="respuesta">
+                        Ventaja: Permite la encriptación segura sin necesidad de compartir una 
+                        clave secreta. Es ideal para la firma digital.
+                    </p>
+                    <p class="respuesta">
+                        Desventaja: Es más lenta que la encriptación simétrica y requiere mayor 
+                        capacidad de procesamiento.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Como encriptaríamos para obtener confidencialidad en la transferencia
+                        de datos?
+                    </p>
+                    <p class="respuesta">
+                        Encriptamos con la clave privada, el receptor decripta con la publica.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Como encriptaríamos para autenticar un documento usando firma electrónica?
+                    </p>
+                    <p class="respuesta">
+                        Utilizar encriptación asimétrica. Se genera un hash del documento y se 
+                        encripta con la clave privada del firmante.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que tipo de encriptación se usa en la WEB?
+                    </p>
+                    <p class="respuesta">
+                        Se usa encriptación simétrica (AES) en combinación con encriptación asimétrica (RSA) 
+                        para el establecimiento de conexiones seguras mediante HTTPS.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="container">
+            <h1>Cuestionario 2</h1>
+            <h2>Preguntas sobre HTTP</h2>
+            <ol>
+                <li>
+                    <p class="pregunta">
+                        Sobre que protocolo binario está montado el protocolo HTTP?
+                    </p>
+                    <p class="respuesta">
+                        HTTP se basa en el protocolo TCP.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Cuáles son los clientes http y los servidores http mas utilizados?
+                    </p>
+                    <p class="respuesta">
+                        Clientes: Navegadores como Chrome, Firefox, Safari.
+                    </p>
+                    <p class="respuesta">
+                        Servidores: Apache, Nginx, IIS.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que verbos admite un comentado en el requerimiento HTTP?
+                    </p>
+                    <p class="respuesta">
+                        GET, POST, PUT, DELETE y PATCH
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que contenido lleva el body de un requerimiento HTTP?
+                    </p>
+                    <p class="respuesta">
+                        Puede incluir datos enviados en un formulario, JSON, XML, 
+                        archivos binarios, entre otros.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que diferencia existe entre un URL y un URI?
+                    </p>
+                    <p class="respuesta">
+                        Un URL (Uniform Resource Locator) es un tipo específico de 
+                        URI (Uniform Resource Identifier) que indica cómo acceder a un 
+                        recurso específico, incluyendo su localización.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Como se almacena información relacionada con las respuestas HTTP?
+                    </p>
+                    <p class="respuesta">
+                        A través de cookies, almacenamiento local (localStorage), 
+                        o almacenamiento de sesión (sessionStorage).
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que significa Virtual hosting?
+                    </p>
+                    <p class="respuesta">
+                        Técnica que permite alojar múltiples dominios (sitios web) en 
+                        un único servidor.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Porque el HTTP se considera STATE LESS?   
+                    </p>
+                    <p class="respuesta">
+                        Porque cada petición es independiente y no mantiene ningún estado 
+                        entre transacciones.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Que nueva version de HTTP se está usando para mejorar 
+                        la velocidad de la WEB?
+                    </p>
+                    <p class="respuesta">
+                        HTTP/3.
+                    </p>
+                </li>
+                <li>
+                    <p class="pregunta">
+                        Como va a mejorar el comportamiento de una aplicación WEB en 
+                        ambientes ruidosos o de débil conexión?
+                    </p>
+                    <p class="respuesta">
+                        HTTP/3 utiliza QUIC, un protocolo basado en UDP que mejora la latencia 
+                        y la velocidad de las conexiones, especialmente en redes con pérdida 
+                        de paquetes o alta latencia.
+                    </p>
+                </li>
+            </ol>
+        </div>    
+    </body>
+</html>
