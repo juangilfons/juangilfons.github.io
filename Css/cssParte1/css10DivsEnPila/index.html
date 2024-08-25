@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ejercicio Divs en Pila</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            body {
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            section#content {
+                background-color: lightcoral;
+                width: 80%;
+                margin: auto;
+                padding: 20px;
+            }
+
+            .box {
+                margin: auto;
+                padding: 20px;
+                margin-top: 50px;
+                background-color: lightgray;
+                height: 200px;
+                width: 50%;
+                border-style: solid;
+                border-width: 2px;
+                border-radius: 10px;
+            }
+
+            .box-responsive {
+                text-align: center;
+            }
+
+            @media (max-width: 1080px) and (min-width: 600px) {
+                .box-responsive {
+                    background-color: lightyellow;
+                }
+            }
+
+            @media (max-width: 600px) {
+                .box-responsive {
+                    background-color: lightblue;
+                }
+            }
+
+            .box-radial {
+                text-align: center;
+                background: radial-gradient(yellow, white, lightblue);
+            }
+
+            .box-image {
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+            .box-image img {
+                width: auto;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .box-text {
+                background: linear-gradient(24deg,yellow, white, lightblue);
+            }
+
+            .box-nopadding {
+                background: linear-gradient(75deg,yellow, white, lightblue);
+                padding: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section id="content">
+            <h1>Ejercicio de Divs en Pila</h1>
+            <div class="box box-responsive">
+                <p>Fondo gris para tamaño de view port mayores a 1080</p>
+                <p>Fondo amarillo claro para tamario de view port entre 600 y 1080</p>
+                <p>Fondo celeste para tamaño de view port menor a 600</p>
+            </div>
+            <div class="box box-radial">
+                <p>Gradiente radial</p>
+            </div>
+            <div class="box box-image">
+                <img src="photo.jpg" alt="Photo of a waterfall">
+            </div>
+            <div class="box box-text">
+                <p>Gradiente linear</p>
+            </div>
+            <div class="box box-nopadding">
+                <p>Gradiente linear</p>
+            </div>
+        </section>
+    </body>
+</html>
